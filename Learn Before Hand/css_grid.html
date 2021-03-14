@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS GRIDS</title>
+  <style>
+    .wrapper  > div{
+      background: #eee;
+      padding: 1em;
+    }
+
+    .wrapper > div:nth-child(odd) {
+      background: #ddd;
+    }
+
+    .wrapper  {
+      display: grid;
+      grid-template-columns: 70% 30%;
+      /*grid-column-gap: 1em;
+      grid-row-gap: 1em;*/
+      grid-gap: 1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vitae placeat amet a vero, iste quas repellat quisquam voluptas earum est fugit officia in eius quia autem! Illum, quas architecto?
+    </div>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis voluptates fugit rem aut iusto! Doloribus quisquam, consequatur veniam aut possimus accusantium aliquid itaque at quasi eveniet, praesentium error? Soluta, quisquam?
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vitae placeat amet a vero, iste quas repellat quisquam voluptas earum est fugit officia in eius quia autem! Illum, quas architecto?
+    </div>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis voluptates fugit rem aut iusto! Doloribus quisquam, consequatur veniam aut possimus accusantium aliquid itaque at quasi eveniet, praesentium error? Soluta, quisquam?
+
+  </div>
+</body>
+</html>
